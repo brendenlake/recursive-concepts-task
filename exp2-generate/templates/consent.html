@@ -1,0 +1,64 @@
+<!doctype html>
+<!-- 
+  The consent.html displays the text of your IRB-approved
+  consent form.  Even if you are not required to provide
+  a consent form, it is helpful to use this form to 
+  describe what people can do if an error comes up, etc...
+
+-->
+<html>
+    <head>
+        <title>Alien Crystal Growth - Informed Consent Form</title>
+        <link rel=stylesheet href="/static/css/bootstrap.min.css" type="text/css">
+        <link rel=stylesheet href="/static/css/style.css" type="text/css">
+        <script type="text/javascript">
+            function onexit() {
+              self.close(); // no harm, no foul here
+            }
+        </script>
+    </head>
+    <body>
+        <div id="container-consent">
+            <div id="consent">
+                <h1>We need your consent to proceed</h1>
+                <hr>
+                <div class="legal well">
+                    
+                    <p>You have been invited to take part in a research study named Active Learning. The study is designed to investigate how people learn in dynamic tasks. It will be conducted by Professor Todd M. Gureckis who is the principal investigator, at the Department of Psychology, Faculty of Arts & Science, New York University.</p>
+
+                    <p>If you agree to be in this study, you will be asked to look at pictures of objects (e.g., geometric figures or photographs of everyday objects) presented on a computer display and make judgments about them. Participation in this study will take about 25-30 minutes to complete, and you will receive $3.00 for your participation. In addition, by agreeing to participate, you understand you must be 18 years or older to participate.</p>
+
+                    <p>There are no known risks associated with your participation in this research beyond those of everyday life. Although you will receive no direct benefits, this research may help the investigator understand how people learn new categories.</p>
+
+                    <p>Confidentiality of your research records will be strictly maintained. We assign code numbers to each participant so that data is never directly linked to individual identity, and we are interested in group results rather than the responses of particular individuals. Data are kept in our laboratory and are only viewed by the investigators. These data files are kept on our computer indefinitely.</p>
+
+                    <p>Taking part in this study is voluntary. Not taking part or withdrawing after the study has begun will result in no loss of services from NYU to which you are otherwise entitled. You have the right to skip or not answer any questions you prefer not to answer.</p>
+
+                    <p>If there is anything about the study or your participation that is unclear or that you do not understand, if you have questions or wish to report a research-related problem, you may contact the principal investigator, Todd M. Gureckis at 6 Washington Place, New York, NY, 10003, (212) 998-3794, gureckislab@gmail.com. For questions about your rights as a research participant, you may contact the University Committee on Activities Involving Human Subjects, New York University, 665 Broadway, Suite 804, New York, NY 10012, at ask.humansubjects@nyu.edu or (212) 998-4808.</p>
+
+                    <button type="button" class="btn btn-default btn-sm" onClick="window.print();">
+                    <span class="glyphicon glyphicon-print"></span> Print a copy of this
+                    </button>
+                
+                </div>
+
+                <hr>
+                <h4>Do you understand and consent to these terms?</h4>
+                <br>
+
+                <center>
+                    <button type="button" class="btn btn-primary btn-lg" onClick="window.location='/exp?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}'">
+                    <span class="glyphicon glyphicon-ok"></span> I agree 
+                    </button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="btn btn-danger btn-lg" onClick="onexit()">
+                    <span class="glyphicon glyphicon-ban-circle"></span> No thanks, I do not want to do this HIT
+                    </button>
+                </center>
+
+            </div>
+        </div>
+    </body>
+</html>

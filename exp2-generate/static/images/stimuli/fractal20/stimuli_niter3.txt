@@ -1,0 +1,6 @@
+stimulus 0: [N=4, THETA=60, START=F, F=G-F++F-G, G=GGG, ...]
+stimulus 1: [N=1, THETA=60, START=GGGGGGGGG-GGG-G-F++F-G++G-F++F-G-GGG++GGG-G-F++F-G++G-F++F-G-GGG-GGGGGGGGG, F=F-F+G+F-F, G=GGGG, ...]
+stimulus 2: [N=1, THETA=60, START=GGGGGGGGG-GGG-G-F++F-G++G-F++F-G-GGG++GGG-G-F++F-G++G-F++F-G-GGG-GGGGGGGGG, F=F--G++G++G--F, G=GG, ...]
+stimulus 3: [N=1, THETA=60, START=GGGGGGGGG-GGG-G-F++F-G++G-F++F-G-GGG++GGG-G-F++F-G++G-F++F-G-GGG-GGGGGGGGG, F=G-F-F++G++F-F-G, G=GGG, ...]
+stimulus 4: [N=1, THETA=60, START=GGGGGGGGG-GGG-G-F++F-G++G-F++F-G-GGG++GGG-G-F++F-G++G-F++F-G-GGG-GGGGGGGGG, F=G--G+F++F+G--G, G=GG, ...]
+stimulus 5: [N=1, THETA=60, START=GGGGGGGGG-GGG-G-F++F-G++G-F++F-G-GGG++GGG-G-F++F-G++G-F++F-G-GGG-GGGGGGGGG, F=G--G+F-F+F+F+F+F-F+G--G, G=GGG, ...]

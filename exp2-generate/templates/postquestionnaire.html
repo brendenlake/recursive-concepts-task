@@ -1,0 +1,113 @@
+<div id="container-questionnaire">
+    <h1>Task Complete</h1>
+
+    <hr>
+
+    <p>You are finished!  Thank you for your contributions to science. You will be eligible for full payment once you answer the following questions.</p>
+
+    <div class="instructions well">
+
+        <form id="postquiz" action="debrief" method="post">
+
+
+            <!-- beginning of a question -->
+  
+            <!-- end of a question -->
+
+            <div class="row question">
+                <div class="col-md-8">
+                     What was your strategy? How did you make your choices?:<br>
+                    <textarea id="survey_txt_strategy" rows="5" cols="50" class="survey_txt"></textarea>
+                </div>
+            </div>
+
+            <div class="row question">
+                <div class="col-md-8">
+                    Were the instructions for the task clear?
+                </div>
+                <div class="col-md-4">
+                    <select id="survey_drop_clear">
+                        <option value=""></option>
+                        <option value="1">Very clear</option>
+                        <option value="0">Moderately clear</option>
+                        <option value="-1">Not clear</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row question">
+                <div class="col-md-8">
+                    Did you recognize that the alien crystals are "fractals"?
+                </div>
+                <div class="col-md-4">
+                    <select id="survey_drop_rec_fractal">
+                        <option value=""></option>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row question">
+                <div class="col-md-8">
+                    Before this experiment, how familiar were you with fractals?
+                </div>
+                <div class="col-md-4">
+                    <select id="survey_drop_fam_fractal">
+                        <option value=""></option>
+                        <option value="1">Very familiar</option>
+                        <option value="0">Somewhat familiar</option>
+                        <option value="-1">Not very familiar</option>
+                        <option value="-2">Never heard of them</option>                        
+                    </select>
+                </div>
+            </div>
+
+            <div class="row question">
+                <div class="col-md-8">
+                    Do you have experience with computer programming?
+                </div>
+                <div class="col-md-4">
+                    <select id="survey_programming_exp">
+                        <option value=""></option>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>                        
+                    </select>
+                </div>
+            </div>
+
+            <div class="row question">
+                <div class="col-md-8">
+                     Did you have any technical problems with the site? Please describe:<br>
+                    <textarea id="survey_txt_trouble" rows="5" cols="50" class="survey_txt"></textarea>
+                </div>
+            </div>
+
+            <div class="row question">
+                <div class="col-md-8">
+                    Do you have any general comments?<br>
+                    <textarea id="survey_txt_comments" rows="5" cols="50" class="survey_txt"></textarea>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-7">
+            </div>
+            <div class="col-xs-3">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                    Continue <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>

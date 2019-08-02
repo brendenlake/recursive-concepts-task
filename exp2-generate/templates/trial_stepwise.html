@@ -1,0 +1,40 @@
+<div id="container-exp">
+	<div id="pre"></div>
+	<div id="trial">
+		<p style="text-align:center;" >Trial <span id="curr_trial"></span> of <span id="tot_trial"></span> </p>
+		<p style="text-align:center;" >
+		A surface was infected with a new type of alien crystal.<br>
+		The crystal has been growing for some time.
+		</p>
+		
+		<div id="bases"></div>
+
+		<p style="text-align:center;">
+		<br>		
+		<b>What do you think the crystal will look like if you let it grow one step longer?</b>
+		<br>
+		Please use the interactive display below to demonstrate how the crystal will grow. <button id="review_button" type="button" class="btn btn-primary btn-sm"> Review instructions </button>
+		<br>
+		</p>
+		
+		<table align="center">
+			<tr>
+				<td>
+					<svg height="400" width="400" id="dynamic_display" style="border: 1px solid black; background-color: white;"></svg>
+				</td>
+				<td align="left">
+					<button id="active_all" class="btn btn-success btn-sm">All</button>
+					<br>
+					<button id="deactive_all" class="btn btn-danger btn-sm">None</button>					
+				</td>				
+			</tr>
+		</table>
+
+		<div id="selection-confirm" style="display:none;">
+			<button id="confirm_button" class="btn btn-primary btn-lg continue">
+            	Continue
+            </button>
+		</div>
+
+	</div>
+</div>

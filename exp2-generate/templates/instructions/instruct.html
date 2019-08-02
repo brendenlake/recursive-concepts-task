@@ -1,0 +1,130 @@
+<div id="container-instructions">
+
+    <h1>Instructions</h1>
+
+    <hr>
+
+    <div class="instructions well">
+
+        <p>
+            Please read these instructions carefully. You will be quizzed on their content before the experiment begins.
+        </p>
+
+        <p>
+            In this HIT, you will complete a series of 13 trials. Each trial introduces a new type of "alien crystal" that has infected a surface. The crystal has been growing for some time, and your task is to demonstrate what it will look like as it continues to grow. An example crystal is shown below.
+        </p>
+
+        <p>
+            You can roll your mouse over an image to "zoom" (Please try it now!). This is necessary for certain crystals with intricate detail.
+        </p>
+
+        <table align="center">
+            <tr>
+                <td><b>Before infection</b><br>
+                <img id='preview0' src="/static/images/preview/iter0_small.png" height="150" width="150" data-zoom-image="/static/images/preview/iter0_large.png"/>
+                </td>            
+                <td style="font-size:60px;">&nbsp;&#8594;&nbsp;</td>
+                <td><b>After infection</b><br>
+                <img id='preview3' src="/static/images/preview/iter3_small.png" height="150" width="150" data-zoom-image="/static/images/preview/iter3_large.png"/> 
+                </td>
+            </tr>
+        </table>
+
+<!--         <table align="center">
+            <tr>
+                <td><b>Before infection</b><br>
+                <img id='preview0' src="/static/images/preview/iter0_small.png" height="150" width="150" data-zoom-image="/static/images/preview/iter0_large.png"/> 
+                </td>            
+                <td style="font-size:60px;">&nbsp;&#8594;&nbsp;</td>
+                <td><b>Step 1</b><br>
+                <img id='preview1' src="/static/images/preview/iter1_small.png" height="150" width="150" data-zoom-image="/static/images/preview/iter1_large.png"/> 
+                </td>
+                <td style="font-size:60px;">&nbsp;&#8594;&nbsp;</td>
+                <td><b>Step 2</b><br>
+                <img id='preview2' src="/static/images/preview/iter2_small.png" height="150" width="150" data-zoom-image="/static/images/preview/iter2_large.png"/> 
+                </td>
+            </tr>
+        </table> -->
+
+        <p style="text-align:center;">
+        <br>        
+        <b>What do you think the crystal will look like if you let it grow longer?</b>
+        <br>
+        Please use the interactive display below to demonstrate how the crystal will grow.
+        <br>
+        </p>
+
+        <table align="center">
+            <tr>
+                <td>
+                    <svg height="600" width="600" id="dynamic_demo" style="border: 1px solid black; background-color: white;"></svg>
+                </td>
+                <td align="left">
+                    <button id="demo_active_all" class="btn btn-success btn-sm">All</button>
+                    <br>
+                    <button id="demo_deactive_all" class="btn btn-danger btn-sm">None</button>
+                </td>               
+            </tr>
+        </table>
+
+        <p>
+            How to use the interface (please try each function):
+            
+            <ul>
+              <li>Roll over a line segment to highlight it.</li>
+              <li>If <font color="green">green</font>, the segment will sprout a growth when clicked (it becomes activated).</li>
+              <li>If <font color="red">red</font>, the segment will return to its deactivated state when clicked.</li>
+              <li>As a short cut, click the <font color="green">"All"</font> button to activate every segment.</li>
+              <li>As a short cut, click the <font color="red">"None"</font> button to deactivate every segment.</li>
+            </ul>
+
+           <p>You can choose as many segments as you see appropriate. The order in which you activate/deactivate segments does not matter, only the finished product matters.</p>
+
+           <p>You will not receive any feedback after each trial. The task may feel difficult but please try to choose the best answer.</p>
+        </p>
+                
+        <script type="text/javascript">
+
+        // set up the zooming
+        $('#preview0').elevateZoom({zoomWindowWidth:250, zoomWindowHeight:250, zoomWindowPosition:6});
+        $('#preview3').elevateZoom({zoomWindowWidth:250, zoomWindowHeight:250, zoomWindowPosition:6});
+        
+        // set up the dynamic demo display
+        var demo_angle = 60;
+        var demo_niter = 3;
+        var demo_LHS = ['F'];
+        var demo_RHS = ['F-F++F-F'];
+        var Demo = DynamicDisplay('dynamic_demo',demo_angle,demo_niter,demo_LHS,demo_RHS);
+        Demo.make_children();
+        Demo.tight_window();
+        Demo.draw();
+
+        // create buttons
+        $("#demo_active_all").click(function () {
+            Demo.activate_all();
+        });
+        $("#demo_deactive_all").click(function () {
+            Demo.deactivate_all();
+        });
+        </script>
+
+    </div>
+
+    <hr>
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+                <!-- no previous button on first screen -->
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                Next <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
